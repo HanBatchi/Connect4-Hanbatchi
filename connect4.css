@@ -1,0 +1,73 @@
+/* game board table */
+body{
+  background-color: #c7c6c6;
+}
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+input{
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 7px 10px;
+  transition: 1s;
+  background-color: #e9e6e6;
+}
+input:hover{
+  padding: 15px 30px;
+  background-color: #202020;
+  color: white;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+/* .piece.player1 {
+  background-color: red;
+}
+
+.piece.player2 {
+  background-color: blue;
+} */
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px white;
+}
+
+
+#column-top td:hover {
+  background-color: gold;
+}
+.start-button{
+  padding: 15px 60px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(148, 188, 239);
+  margin: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+.start-button:hover{
+  margin: 15px;
+  font-size: 20px;
+  padding: 25px 80px;
+}
